@@ -1,0 +1,5 @@
+24/7/23: 
+    1. Array Impplementation was done(1D and multi-D)
+25/7/23: 
+    1. Linked list was implemented
+    2. Circular Doubly linked list implemented
