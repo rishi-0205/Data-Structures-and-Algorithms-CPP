@@ -1,3 +1,5 @@
+/*Linked is used to store items in non contiguous memory locations.
+this makes it easier to add now data.*/
 #include <iostream>
 
 class Node {

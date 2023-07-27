@@ -3,3 +3,5 @@
 25/7/23: 
     1. Linked list was implemented
     2. Circular Doubly linked list implemented
+26/7/23:
+    1. Stack implemented with arrays
