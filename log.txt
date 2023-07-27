@@ -7,3 +7,5 @@
     1. Stack implemented with arrays
 27/7/23:
     1. Stack implemented with linkedlist
+    2. Queue implemented with arrays
+    3. Queue implemented with linkedlist
