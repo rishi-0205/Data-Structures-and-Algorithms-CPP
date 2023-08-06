@@ -9,3 +9,6 @@
     1. Stack implemented with linkedlist
     2. Queue implemented with arrays
     3. Queue implemented with linkedlist
+6/8/2023:
+    1. BST implemented. 
+    2. Tree traversal implemented.

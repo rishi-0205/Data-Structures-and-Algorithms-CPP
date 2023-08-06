@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <queue>
 class node{
     public:
     int data;
@@ -52,6 +52,50 @@ class bst{
         inOrderTraversalRecursive(current->right);
     }
 
+    void preOrderTraversal(node* root) {
+        if (root == nullptr) {
+            return;
+        }
+
+        std::cout << root->data << " ";
+        preOrderTraversal(root->left);
+        preOrderTraversal(root->right);
+    }
+
+    void postOrderTraversal(node* root) {
+        if (root == nullptr) {
+            return;
+        }
+
+        postOrderTraversal(root->left);
+        postOrderTraversal(root->right);
+        std::cout << root->data << " ";
+    }
+
+    void levelOrderTraversal(node* root) {
+        if (root == nullptr) {
+            return;
+        }
+
+        std::queue<node*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            node* current = q.front();
+            q.pop();
+
+            std::cout << current->data << " ";
+
+            if (current->left != nullptr) {
+                q.push(current->left);
+            }
+
+            if (current->right != nullptr) {
+                q.push(current->right);
+            }
+        }
+    }
+
     public:
     bst() {
         root = nullptr;
@@ -67,6 +111,21 @@ class bst{
 
     void inOrderTraversal() {
         inOrderTraversalRecursive(root);
+        std::cout << std::endl;
+    }
+
+    void preOrderTraversal() {
+        preOrderTraversal(root);
+        std::cout << std::endl;
+    }
+
+    void postOrderTraversal() {
+        postOrderTraversal(root);
+        std::cout << std::endl;
+    }
+
+    void levelOrderTraversal() {
+        levelOrderTraversal(root);
         std::cout << std::endl;
     }
 };
